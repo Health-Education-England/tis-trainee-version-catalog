@@ -7,6 +7,8 @@ jobs:
   increment-version:
     name: Auto Increment Version
     uses: health-education-england/.github/.github/workflows/auto-version.yml@main
+    secrets:
+      commit-pat: ${{ secrets.PAT_AUTOMATED_COMMITS }}
 
   publish:
     name: Publish
