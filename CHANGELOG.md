@@ -1,0 +1,10 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## 1.1.0 (2025-01-15)
+
+
+### Features
+
+* initial version catalog and build script ([0e8aa97](https://github.com/Health-Education-England/tis-trainee-version-catalog/commit/0e8aa97bb87e4f9ff222c4c1236421e758204407))
