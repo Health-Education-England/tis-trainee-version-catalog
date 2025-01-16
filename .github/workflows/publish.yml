@@ -37,4 +37,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: uk.nhs.tis.trainee_version-catalog_${{ needs.increment-version.outputs.new-version }}
-          path: ~/.m2/uk/tis/nhs/tis/trainee/version-catalog/${{ needs.increment-version.outputs.new-version }}/
+          path: ~/.m2/uk/nhs/tis/trainee/version-catalog/${{ needs.increment-version.outputs.new-version }}/
