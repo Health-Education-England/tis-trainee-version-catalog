@@ -1,5 +1,5 @@
 [versions]
-mapstruct = "1.5.5.Final"
+mapstruct = "1.6.3"
 mongock = "5.4.2"
 openhtmltopdf = "1.0.10"
 sentry = "7.6.0"
