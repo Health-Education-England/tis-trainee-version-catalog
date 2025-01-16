@@ -16,7 +16,7 @@ openhtmltopdf-slf4j = { module = "com.openhtmltopdf:openhtmltopdf-slf4j", versio
 sentry-core = { module = "io.sentry:sentry-spring-boot-starter-jakarta", version.ref = "sentry" }
 sentry-logback = { module = "io.sentry:sentry-logback", version.ref = "sentry"}
 spring-cloud-dependencies-core = { module = "org.springframework.cloud:spring-cloud-dependencies", version = "2023.0.0"}
-spring-cloud-dependencies-aws = { module = "io.awspring.cloud:spring-cloud-aws-dependencies", version = "3.1.0"}
+spring-cloud-dependencies-aws = { module = "io.awspring.cloud:spring-cloud-aws-dependencies", version = "3.2.1"}
 spring-cloud-dependencies-azure = { module = "com.azure.spring:spring-cloud-azure-dependencies", version = "5.9.1"}
 
 [bundles]
