@@ -2,7 +2,7 @@
 mapstruct = "1.5.5.Final"
 mongock = "5.4.2"
 openhtmltopdf = "1.0.10"
-sentry = "7.6.0"
+sentry = "7.20.0"
 
 [libraries]
 aws-xray = { module = "com.amazonaws:aws-xray-recorder-sdk-spring", version = "2.15.1"}
