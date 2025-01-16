@@ -22,7 +22,7 @@ catalog {
 mavenPublishing {
   configure(VersionCatalog())
 //  publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
-//  signAllPublications()
+  signAllPublications()
 
   coordinates(artifactId = "version-catalog")
 
