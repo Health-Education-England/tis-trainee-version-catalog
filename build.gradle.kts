@@ -1,4 +1,4 @@
-//import com.vanniktech.maven.publish.SonatypeHost
+import com.vanniktech.maven.publish.SonatypeHost
 import com.vanniktech.maven.publish.VersionCatalog
 
 plugins {
@@ -21,7 +21,7 @@ catalog {
 
 mavenPublishing {
   configure(VersionCatalog())
-//  publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
+  publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
   signAllPublications()
 
   coordinates(artifactId = "version-catalog")
@@ -30,6 +30,12 @@ mavenPublishing {
     name = "TIS Trainee Version Catalog"
     description = "A version catalog for TIS Trainee services."
     url = "https://github.com/Health-Education-England"
+
+    developers {
+      developer {
+        name = "NHS England"
+      }
+    }
 
     licenses {
       license {

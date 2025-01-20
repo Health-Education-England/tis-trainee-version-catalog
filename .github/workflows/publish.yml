@@ -36,14 +36,9 @@ jobs:
           java-version: 21
 
       - name: Publish
-        run: ./gradlew publishToMavenLocal
+        run: ./gradlew publish
         env:
+          ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
+          ORG_GRADLE_PROJECT_mavenCentralPassword: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
           ORG_GRADLE_PROJECT_signingInMemoryKey: ${{ secrets.MAVEN_CENTRAL_GPG_KEY }}
           ORG_GRADLE_PROJECT_signingInMemoryKeyPassword: ${{ secrets.MAVEN_CENTRAL_GPG_PASSPHRASE }}
-
-      # Temporary step to allow verification of the built dependency.
-      - name: Archive artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: uk.nhs.tis.trainee_version-catalog_${{ needs.increment-version.outputs.new-version }}
-          path: /home/runner/.m2/repository/uk/nhs/tis/trainee/version-catalog/${{ needs.increment-version.outputs.new-version }}/
