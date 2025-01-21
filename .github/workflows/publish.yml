@@ -3,15 +3,16 @@ name: Publish to Maven Central
 on:
   workflow_dispatch:
     inputs:
-      force-publish:
-        description: Force the publish step to run even if the version was not incremented.
-        type: boolean
-        default: false
+      force-publish-version:
+        description: Skip versioning and force publish the given version instead. Should not include the `v` prefix (e.g `1.0.0`).
+        required: false
+        type: string
 
 jobs:
   increment-version:
     name: Auto Increment Version
     uses: health-education-england/.github/.github/workflows/auto-version.yml@main
+    if: ${{ !inputs.force-publish-version }}
     secrets:
       commit-pat: ${{ secrets.PAT_AUTOMATED_COMMITS }}
 
@@ -19,14 +20,15 @@ jobs:
     name: Publish
     needs: increment-version
     runs-on: ubuntu-latest
-    if: inputs.force-publish || needs.increment-version.outputs.new-version
+    if: |
+      !failure() && !cancelled() &&
+      (inputs.force-publish-version || needs.increment-version.outputs.new-version)
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: v${{ needs.increment-version.outputs.new-version }}
-          fetch-depth: 0
+          ref: v${{ inputs.force-publish-version || needs.increment-version.outputs.new-version }}
 
       - name: Set up JDK
         uses: actions/setup-java@v4
