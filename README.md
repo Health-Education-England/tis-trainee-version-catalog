@@ -11,7 +11,7 @@ First, add the catalog to the Gradle settings file (e.g. `settings.gradle.kts`).
 dependencyResolutionManagement {
   repositories {
     mavenCentral()
-    mavenLocal() // Required until publishing to Maven Central is implemented.
+    mavenLocal() // Only required if testing changes from a local catalog build.
   }
 
   versionCatalogs {
@@ -42,3 +42,14 @@ dependencies {
   implementation(libs.bundles.mongock)
 }
 ```
+
+## Publishing the Catalog
+Publishing the catalog is currently an automated process, with a manual trigger.
+The `Publish to Maven Central` workflow will automatically increment the version
+based on commit messages following the [Conventional Commit] specification, and
+then publish and release the version catalog to Maven Central.
+
+The [changelog](CHANGELOG.md) will be automatically updated to reflect the
+commits included in the new published version.
+
+[Conventional Commit]:https://www.conventionalcommits.org/
