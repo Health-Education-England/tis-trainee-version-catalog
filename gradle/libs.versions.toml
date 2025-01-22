@@ -8,7 +8,7 @@ sentry = "7.6.0"
 aws-xray = { module = "com.amazonaws:aws-xray-recorder-sdk-spring", version = "2.15.1"}
 jsoup = { module = "org.jsoup:jsoup", version = "1.17.2"}
 mapstruct-core = { module = "org.mapstruct:mapstruct", version.ref = "mapstruct" }
-mapstruct-processor = { module = "org.mapstruct:mapstruct", version.ref = "mapstruct"}
+mapstruct-processor = { module = "org.mapstruct:mapstruct-processor", version.ref = "mapstruct"}
 mongock-core = { module = "io.mongock:mongock-springboot", version.ref = "mongock" }
 mongock-driver = { module = "io.mongock:mongodb-springdata-v4-driver", version.ref = "mongock" }
 openhtmltopdf-pdfbox = { module = "com.openhtmltopdf:openhtmltopdf-pdfbox", version.ref = "openhtmltopdf"}
