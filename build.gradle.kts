@@ -11,7 +11,7 @@ repositories {
 }
 
 group = "uk.nhs.tis.trainee"
-version = "0.0.1"
+version = "0.0.2"
 
 catalog {
   versionCatalog {
