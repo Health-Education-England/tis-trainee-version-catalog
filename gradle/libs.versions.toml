@@ -5,7 +5,7 @@ openhtmltopdf = "1.0.10"
 sentry = "7.6.0"
 
 [libraries]
-aws-xray = { module = "com.amazonaws:aws-xray-recorder-sdk-spring", version = "2.15.3"}
+aws-xray = { module = "com.amazonaws:aws-xray-recorder-sdk-spring", version = "2.18.2"}
 jsoup = { module = "org.jsoup:jsoup", version = "1.17.2"}
 mapstruct-core = { module = "org.mapstruct:mapstruct", version.ref = "mapstruct" }
 mapstruct-processor = { module = "org.mapstruct:mapstruct-processor", version.ref = "mapstruct"}
