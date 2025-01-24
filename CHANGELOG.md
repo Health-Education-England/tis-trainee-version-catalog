@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.3](https://github.com/Health-Education-England/tis-trainee-version-catalog/compare/v0.0.2...v0.0.3) (2025-01-24)
+
+
+### Miscellaneous
+
+* **deps:** upgrade all to latest patch versions (#12) ([cd3daaa](https://github.com/Health-Education-England/tis-trainee-version-catalog/commit/cd3daaae1ecf10805bd494a028e716cd82a18450))
+
 ## [0.0.2](https://github.com/Health-Education-England/tis-trainee-version-catalog/compare/v0.0.1...v0.0.2) (2025-01-22)
 
 
