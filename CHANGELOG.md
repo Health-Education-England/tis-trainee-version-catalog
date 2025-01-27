@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.4](https://github.com/Health-Education-England/tis-trainee-version-catalog/compare/v0.0.3...v0.0.4) (2025-01-27)
+
+
+### Miscellaneous
+
+* **deps:** upgrade Sentry and XRay minor version (#15) ([0c716e4](https://github.com/Health-Education-England/tis-trainee-version-catalog/commit/0c716e4bada88f0abee48689ec0a2e3385f45515))
+
 ## [0.0.3](https://github.com/Health-Education-England/tis-trainee-version-catalog/compare/v0.0.2...v0.0.3) (2025-01-24)
 
 
