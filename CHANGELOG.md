@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.5](https://github.com/Health-Education-England/tis-trainee-version-catalog/compare/v0.0.4...v0.0.5) (2025-01-28)
+
+
+### Miscellaneous
+
+* **deps:** upgrade to supported AWS/Azure versions (#16) ([89c6698](https://github.com/Health-Education-England/tis-trainee-version-catalog/commit/89c6698776655104c2930020c438a6564a752589))
+
 ## [0.0.4](https://github.com/Health-Education-England/tis-trainee-version-catalog/compare/v0.0.3...v0.0.4) (2025-01-27)
 
 
