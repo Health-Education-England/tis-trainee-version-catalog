@@ -6,7 +6,7 @@ sentry = "7.20.1"
 
 [libraries]
 aws-xray = { module = "com.amazonaws:aws-xray-recorder-sdk-spring", version = "2.18.2"}
-jsoup = { module = "org.jsoup:jsoup", version = "1.17.2"}
+jsoup = { module = "org.jsoup:jsoup", version = "1.19.1"}
 mapstruct-core = { module = "org.mapstruct:mapstruct", version.ref = "mapstruct" }
 mapstruct-processor = { module = "org.mapstruct:mapstruct-processor", version.ref = "mapstruct"}
 mongock-core = { module = "io.mongock:mongock-springboot", version.ref = "mongock" }
