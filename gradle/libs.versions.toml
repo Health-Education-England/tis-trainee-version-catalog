@@ -1,7 +1,7 @@
 [versions]
 mapstruct = "1.6.3"
 mongock = "5.4.4"
-openhtmltopdf = "1.0.10"
+openhtmltopdf = "1.1.24"
 sentry = "8.9.0"
 
 [libraries]
@@ -11,8 +11,8 @@ mapstruct-core = { module = "org.mapstruct:mapstruct", version.ref = "mapstruct"
 mapstruct-processor = { module = "org.mapstruct:mapstruct-processor", version.ref = "mapstruct"}
 mongock-core = { module = "io.mongock:mongock-springboot", version.ref = "mongock" }
 mongock-driver = { module = "io.mongock:mongodb-springdata-v4-driver", version.ref = "mongock" }
-openhtmltopdf-pdfbox = { module = "com.openhtmltopdf:openhtmltopdf-pdfbox", version.ref = "openhtmltopdf"}
-openhtmltopdf-slf4j = { module = "com.openhtmltopdf:openhtmltopdf-slf4j", version.ref = "openhtmltopdf"}
+openhtmltopdf-pdfbox = { module = "io.github.openhtmltopdf:openhtmltopdf-pdfbox", version.ref = "openhtmltopdf"}
+openhtmltopdf-slf4j = { module = "io.github.openhtmltopdf:openhtmltopdf-slf4j", version.ref = "openhtmltopdf"}
 sentry-core = { module = "io.sentry:sentry-spring-boot-starter-jakarta", version.ref = "sentry" }
 sentry-logback = { module = "io.sentry:sentry-logback", version.ref = "sentry"}
 spring-cloud-dependencies-core = { module = "org.springframework.cloud:spring-cloud-dependencies", version = "2023.0.5"}
