@@ -26,5 +26,5 @@ sentry = ["sentry-core", "sentry-logback"]
 
 [plugins]
 sonarqube = { id = "org.sonarqube", version = "6.1.0.5360"}
-spring-boot = { id = "org.springframework.boot", version = "3.3.8"}
+spring-boot = { id = "org.springframework.boot", version = "3.3.11"}
 spring-dependency-management = { id = "io.spring.dependency-management", version = "1.1.7"}
