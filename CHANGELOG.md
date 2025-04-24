@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.6](https://github.com/Health-Education-England/tis-trainee-version-catalog/compare/v0.0.5...v0.0.6) (2025-04-24)
+
+
+### Bug Fixes
+
+* **deps:** replace OpenHtmlToPdf ([07cbeae](https://github.com/Health-Education-England/tis-trainee-version-catalog/commit/07cbeae7ff2cdb6aeca3fc33929a59f9e6a89caa))
+
 ## [0.0.5](https://github.com/Health-Education-England/tis-trainee-version-catalog/compare/v0.0.4...v0.0.5) (2025-01-28)
 
 
