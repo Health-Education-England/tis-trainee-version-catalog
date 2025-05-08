@@ -6,10 +6,6 @@ plugins {
   id("com.vanniktech.maven.publish") version "0.30.0"
 }
 
-repositories {
-  mavenCentral()
-}
-
 group = "uk.nhs.tis.trainee"
 version = "0.0.6"
 
