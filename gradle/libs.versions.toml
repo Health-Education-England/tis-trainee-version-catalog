@@ -3,6 +3,7 @@ mapstruct = "1.6.3"
 mongock = "5.4.4"
 openhtmltopdf = "1.1.24"
 sentry = "8.9.0"
+shedlock = "6.9.2"
 
 [libraries]
 aws-xray = { module = "com.amazonaws:aws-xray-recorder-sdk-spring", version = "2.18.2"}
@@ -13,16 +14,20 @@ mongock-core = { module = "io.mongock:mongock-springboot", version.ref = "mongoc
 mongock-driver = { module = "io.mongock:mongodb-springdata-v4-driver", version.ref = "mongock" }
 openhtmltopdf-pdfbox = { module = "io.github.openhtmltopdf:openhtmltopdf-pdfbox", version.ref = "openhtmltopdf"}
 openhtmltopdf-slf4j = { module = "io.github.openhtmltopdf:openhtmltopdf-slf4j", version.ref = "openhtmltopdf"}
+openhtmltopdf-svg-support = { module = "io.github.openhtmltopdf:openhtmltopdf-svg-support", version.ref = "openhtmltopdf"}
 sentry-core = { module = "io.sentry:sentry-spring-boot-starter-jakarta", version.ref = "sentry" }
 sentry-logback = { module = "io.sentry:sentry-logback", version.ref = "sentry"}
+shedlock-spring = { module = "net.javacrumbs.shedlock:shedlock-spring", version.ref = "shedlock"}
+shedlock-provider-mongo = { module = "net.javacrumbs.shedlock:shedlock-provider-mongo", version.ref = "shedlock"}
 spring-cloud-dependencies-core = { module = "org.springframework.cloud:spring-cloud-dependencies", version = "2023.0.5"}
 spring-cloud-dependencies-aws = { module = "io.awspring.cloud:spring-cloud-aws-dependencies", version = "3.2.1"}
 spring-cloud-dependencies-azure = { module = "com.azure.spring:spring-cloud-azure-dependencies", version = "5.19.0"}
 
 [bundles]
 mongock = ["mongock-core", "mongock-driver"]
-pdf-publishing = ["jsoup", "openhtmltopdf-pdfbox", "openhtmltopdf-slf4j"]
+pdf-publishing = ["jsoup", "openhtmltopdf-pdfbox", "openhtmltopdf-slf4j", "openhtmltopdf-svg-support"]
 sentry = ["sentry-core", "sentry-logback"]
+shedlock-mongo = ["shedlock-spring", "shedlock-provider-mongo"]
 
 [plugins]
 sonarqube = { id = "org.sonarqube", version = "6.1.0.5360"}
