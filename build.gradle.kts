@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "uk.nhs.tis.trainee"
-version = "0.0.6"
+version = "0.0.7"
 
 catalog {
   versionCatalog {

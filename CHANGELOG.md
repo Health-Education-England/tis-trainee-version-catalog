@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.7](https://github.com/Health-Education-England/tis-trainee-version-catalog/compare/v0.0.6...v0.0.7) (2025-07-24)
+
+
+### Features
+
+* add a bundle for Shedlock on Mongo ([381d179](https://github.com/Health-Education-England/tis-trainee-version-catalog/commit/381d179b047cf9ce31d59979ca352c777584ed13))
+* add SVG support to the PDF publishing bundle ([fdc0699](https://github.com/Health-Education-England/tis-trainee-version-catalog/commit/fdc06990dadda9d1028292e95da7aa94427d903c))
+
 ## [0.0.6](https://github.com/Health-Education-England/tis-trainee-version-catalog/compare/v0.0.5...v0.0.6) (2025-04-24)
 
 
