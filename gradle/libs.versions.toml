@@ -4,9 +4,12 @@ mongock = "5.4.4"
 openhtmltopdf = "1.1.24"
 sentry = "8.9.0"
 shedlock = "6.9.2"
+xray = "2.18.3"
 
 [libraries]
-aws-xray = { module = "com.amazonaws:aws-xray-recorder-sdk-spring", version = "2.18.2"}
+aws-xray-instrumentor = { module = "com.amazonaws:aws-xray-recorder-sdk-aws-sdk-v2-instrumentor", version.ref = "xray"}
+aws-xray-sdk = { module = "com.amazonaws:aws-xray-recorder-sdk-aws-sdk-v2", version.ref = "xray"}
+aws-xray-spring = { module = "com.amazonaws:aws-xray-recorder-sdk-spring", version.ref = "xray"}
 jsoup = { module = "org.jsoup:jsoup", version = "1.19.1"}
 mapstruct-core = { module = "org.mapstruct:mapstruct", version.ref = "mapstruct" }
 mapstruct-processor = { module = "org.mapstruct:mapstruct-processor", version.ref = "mapstruct"}
@@ -28,6 +31,7 @@ mongock = ["mongock-core", "mongock-driver"]
 pdf-publishing = ["jsoup", "openhtmltopdf-pdfbox", "openhtmltopdf-slf4j", "openhtmltopdf-svg-support"]
 sentry = ["sentry-core", "sentry-logback"]
 shedlock-mongo = ["shedlock-spring", "shedlock-provider-mongo"]
+aws-xray = ["aws-xray-instrumentor", "aws-xray-sdk", "aws-xray-spring"]
 
 [plugins]
 sonarqube = { id = "org.sonarqube", version = "6.1.0.5360"}
