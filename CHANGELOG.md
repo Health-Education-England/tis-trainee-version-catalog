@@ -9,6 +9,18 @@ All notable changes to this project will be documented in this file. See [commit
 
 * xray bundle for instrumentation ([bb08cc4](https://github.com/Health-Education-England/tis-trainee-version-catalog/commit/bb08cc4be98bd87825ab8d2eaea7075a27fac3fb))
 
+
+### Miscellaneous
+
+* **release:** 0.0.8 ([697b340](https://github.com/Health-Education-England/tis-trainee-version-catalog/commit/697b34077d26fa9391d6001eef434e03bf3688b6))
+
+## [0.0.8](https://github.com/Health-Education-England/tis-trainee-version-catalog/compare/v0.0.7...v0.0.8) (2025-07-30)
+
+
+### Features
+
+* xray bundle for instrumentation ([bb08cc4](https://github.com/Health-Education-England/tis-trainee-version-catalog/commit/bb08cc4be98bd87825ab8d2eaea7075a27fac3fb))
+
 ## [0.0.7](https://github.com/Health-Education-England/tis-trainee-version-catalog/compare/v0.0.6...v0.0.7) (2025-07-24)
 
 
