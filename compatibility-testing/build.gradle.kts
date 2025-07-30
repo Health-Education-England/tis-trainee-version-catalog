@@ -29,6 +29,8 @@ dependencies {
   implementation("org.springframework.boot:spring-boot-starter-validation")
   implementation("org.springframework.boot:spring-boot-starter-web")
 
+  implementation(libs.bundles.shedlock.mongo)
+
   // Lombok
   compileOnly("org.projectlombok:lombok")
   annotationProcessor("org.projectlombok:lombok")
@@ -40,7 +42,7 @@ dependencies {
   // Amazon AWS
   implementation("io.awspring.cloud:spring-cloud-aws-starter-sqs")
   implementation("io.awspring.cloud:spring-cloud-aws-starter-sns")
-  implementation(libs.aws.xray)
+  implementation(libs.bundles.aws.xray)
 
   // PDF
   implementation(libs.bundles.pdf.publishing)
