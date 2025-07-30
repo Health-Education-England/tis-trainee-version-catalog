@@ -27,11 +27,11 @@ spring-cloud-dependencies-aws = { module = "io.awspring.cloud:spring-cloud-aws-d
 spring-cloud-dependencies-azure = { module = "com.azure.spring:spring-cloud-azure-dependencies", version = "5.19.0"}
 
 [bundles]
+aws-xray = ["aws-xray-instrumentor", "aws-xray-sdk", "aws-xray-spring"]
 mongock = ["mongock-core", "mongock-driver"]
 pdf-publishing = ["jsoup", "openhtmltopdf-pdfbox", "openhtmltopdf-slf4j", "openhtmltopdf-svg-support"]
 sentry = ["sentry-core", "sentry-logback"]
 shedlock-mongo = ["shedlock-spring", "shedlock-provider-mongo"]
-aws-xray = ["aws-xray-instrumentor", "aws-xray-sdk", "aws-xray-spring"]
 
 [plugins]
 sonarqube = { id = "org.sonarqube", version = "6.1.0.5360"}
