@@ -2,7 +2,7 @@
 mapstruct = "1.6.3"
 mongock = "5.4.4"
 openhtmltopdf = "1.1.29"
-sentry = "8.9.0"
+sentry = "8.18.0"
 shedlock = "6.9.2"
 xray = "2.18.3"
 
