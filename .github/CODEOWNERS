@@ -1,19 +1,11 @@
-# --- GitHub configuration ---
-.github/CODEOWNERS                    @Health-Education-England/trainee-backend
-.github/workflows/*                   @Health-Education-England/trainee-devops
-.github/dependabot.yml                @Health-Education-England/trainee-backend
+# --- Default ---
+* @Health-Education-England/trainee-backend
 
-# --- Source code ---
-.compatibility-testing/*             @Health-Education-England/trainee-backend
+# --- Shared ownership ---
+/.gitattributes @Health-Education-England/trainee-backend @Health-Education-England/trainee-devops
+/.gitignore     @Health-Education-England/trainee-backend @Health-Education-England/trainee-devops
 
-# --- Root-level files ---
-.editorconfig                         @Health-Education-England/trainee-backend
-.gitattributes                        @Health-Education-England/trainee-devops @Health-Education-England/trainee-backend
-.gitignore                            @Health-Education-England/trainee-devops @Health-Education-England/trainee-backend
-build.gradle.kts                      @Health-Education-England/trainee-backend
-CHANGELOG.md                          @Health-Education-England/trainee-backend
-gradlew                               @Health-Education-England/trainee-devops
-gradlew.bat                           @Health-Education-England/trainee-devops
-LICENSE                               @Health-Education-England/trainee-backend
-README.md                             @Health-Education-England/trainee-backend
-settings.gradle.kts                   @Health-Education-England/trainee-backend
+# --- DevOps owned ---
+/.github/workflows/ @Health-Education-England/trainee-devops
+/gradlew            @Health-Education-England/trainee-devops
+/gradlew.bat        @Health-Education-England/trainee-devops
