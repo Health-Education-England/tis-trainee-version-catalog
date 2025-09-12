@@ -3,7 +3,7 @@ import com.vanniktech.maven.publish.VersionCatalog
 
 plugins {
   `version-catalog`
-  id("com.vanniktech.maven.publish") version "0.30.0"
+  id("com.vanniktech.maven.publish") version "0.34.0"
 }
 
 group = "uk.nhs.tis.trainee"
