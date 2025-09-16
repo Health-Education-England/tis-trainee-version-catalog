@@ -10,7 +10,7 @@ xray = "2.18.3"
 aws-xray-instrumentor = { module = "com.amazonaws:aws-xray-recorder-sdk-aws-sdk-v2-instrumentor", version.ref = "xray"}
 aws-xray-sdk = { module = "com.amazonaws:aws-xray-recorder-sdk-aws-sdk-v2", version.ref = "xray"}
 aws-xray-spring = { module = "com.amazonaws:aws-xray-recorder-sdk-spring", version.ref = "xray"}
-jsoup = { module = "org.jsoup:jsoup", version = "1.19.1"}
+jsoup = { module = "org.jsoup:jsoup", version = "1.21.2"}
 mapstruct-core = { module = "org.mapstruct:mapstruct", version.ref = "mapstruct" }
 mapstruct-processor = { module = "org.mapstruct:mapstruct-processor", version.ref = "mapstruct"}
 mongock-core = { module = "io.mongock:mongock-springboot", version.ref = "mongock" }
