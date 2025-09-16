@@ -1,9 +1,8 @@
-import com.vanniktech.maven.publish.SonatypeHost
 import com.vanniktech.maven.publish.VersionCatalog
 
 plugins {
   `version-catalog`
-  id("com.vanniktech.maven.publish") version "0.30.0"
+  id("com.vanniktech.maven.publish") version "0.34.0"
 }
 
 group = "uk.nhs.tis.trainee"
@@ -17,7 +16,7 @@ catalog {
 
 mavenPublishing {
   configure(VersionCatalog())
-  publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL, automaticRelease = true)
+  publishToMavenCentral(automaticRelease = true)
   signAllPublications()
 
   coordinates(artifactId = "version-catalog")
