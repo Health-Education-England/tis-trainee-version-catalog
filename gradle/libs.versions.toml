@@ -23,7 +23,7 @@ sentry-logback = { module = "io.sentry:sentry-logback", version.ref = "sentry"}
 shedlock-spring = { module = "net.javacrumbs.shedlock:shedlock-spring", version.ref = "shedlock"}
 shedlock-provider-mongo = { module = "net.javacrumbs.shedlock:shedlock-provider-mongo", version.ref = "shedlock"}
 spring-cloud-dependencies-core = { module = "org.springframework.cloud:spring-cloud-dependencies", version = "2023.0.5"}
-spring-cloud-dependencies-aws = { module = "io.awspring.cloud:spring-cloud-aws-dependencies", version = "3.2.1"}
+spring-cloud-dependencies-aws = { module = "io.awspring.cloud:spring-cloud-aws-dependencies", version = "3.4.0"}
 spring-cloud-dependencies-azure = { module = "com.azure.spring:spring-cloud-azure-dependencies", version = "5.19.0"}
 
 [bundles]
