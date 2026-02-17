@@ -1,16 +1,16 @@
 [versions]
 mapstruct = "1.6.3"
 mongock = "5.5.1"
-openhtmltopdf = "1.1.29"
-sentry = "8.21.1"
+openhtmltopdf = "1.1.37"
+sentry = "8.32.0"
 shedlock = "6.9.2"
-xray = "2.18.3"
+xray = "2.20.0"
 
 [libraries]
 aws-xray-instrumentor = { module = "com.amazonaws:aws-xray-recorder-sdk-aws-sdk-v2-instrumentor", version.ref = "xray"}
 aws-xray-sdk = { module = "com.amazonaws:aws-xray-recorder-sdk-aws-sdk-v2", version.ref = "xray"}
 aws-xray-spring = { module = "com.amazonaws:aws-xray-recorder-sdk-spring", version.ref = "xray"}
-jsoup = { module = "org.jsoup:jsoup", version = "1.21.2"}
+jsoup = { module = "org.jsoup:jsoup", version = "1.22.1"}
 mapstruct-core = { module = "org.mapstruct:mapstruct", version.ref = "mapstruct" }
 mapstruct-processor = { module = "org.mapstruct:mapstruct-processor", version.ref = "mapstruct"}
 mongock-core = { module = "io.mongock:mongock-springboot", version.ref = "mongock" }
@@ -22,9 +22,9 @@ sentry-core = { module = "io.sentry:sentry-spring-boot-starter-jakarta", version
 sentry-logback = { module = "io.sentry:sentry-logback", version.ref = "sentry"}
 shedlock-spring = { module = "net.javacrumbs.shedlock:shedlock-spring", version.ref = "shedlock"}
 shedlock-provider-mongo = { module = "net.javacrumbs.shedlock:shedlock-provider-mongo", version.ref = "shedlock"}
-spring-cloud-dependencies-core = { module = "org.springframework.cloud:spring-cloud-dependencies", version = "2023.0.5"}
-spring-cloud-dependencies-aws = { module = "io.awspring.cloud:spring-cloud-aws-dependencies", version = "3.2.1"}
-spring-cloud-dependencies-azure = { module = "com.azure.spring:spring-cloud-azure-dependencies", version = "5.19.0"}
+spring-cloud-dependencies-core = { module = "org.springframework.cloud:spring-cloud-dependencies", version = "2025.0.1"}
+spring-cloud-dependencies-aws = { module = "io.awspring.cloud:spring-cloud-aws-dependencies", version = "3.4.2"}
+spring-cloud-dependencies-azure = { module = "com.azure.spring:spring-cloud-azure-dependencies", version = "6.1.0"}
 
 [bundles]
 aws-xray = ["aws-xray-instrumentor", "aws-xray-sdk", "aws-xray-spring"]
@@ -34,6 +34,6 @@ sentry = ["sentry-core", "sentry-logback"]
 shedlock-mongo = ["shedlock-spring", "shedlock-provider-mongo"]
 
 [plugins]
-sonarqube = { id = "org.sonarqube", version = "6.2.0.5505"}
-spring-boot = { id = "org.springframework.boot", version = "3.3.11"}
+sonarqube = { id = "org.sonarqube", version = "7.2.2.6593"}
+spring-boot = { id = "org.springframework.boot", version = "3.5.10"}
 spring-dependency-management = { id = "io.spring.dependency-management", version = "1.1.7"}
