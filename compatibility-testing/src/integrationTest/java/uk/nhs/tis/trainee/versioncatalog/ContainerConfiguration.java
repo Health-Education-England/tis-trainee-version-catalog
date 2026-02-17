@@ -27,7 +27,7 @@ import static org.testcontainers.utility.DockerImageName.parse;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
 import org.springframework.context.annotation.Bean;
-import org.springframework.test.context.DynamicPropertyRegistry;
+import org.springframework.test.context.DynamicPropertyRegistrar;
 import org.testcontainers.containers.MongoDBContainer;
 import org.testcontainers.containers.localstack.LocalStackContainer;
 
@@ -40,23 +40,31 @@ public class ContainerConfiguration {
   /**
    * Create a LocalStack container.
    *
-   * @param registry The registry to add localstack properties to.
    * @return The created container.
    */
   @Bean
-  LocalStackContainer localStackContainer(DynamicPropertyRegistry registry) {
-    LocalStackContainer localStackContainer = new LocalStackContainer(
+  LocalStackContainer localStackContainer() {
+    return new LocalStackContainer(
       parse("localstack/localstack:3"))
       .withServices(SQS);
+  }
 
-    registry.add("spring.cloud.aws.region.static", localStackContainer::getRegion);
-    registry.add("spring.cloud.aws.credentials.access-key", localStackContainer::getAccessKey);
-    registry.add("spring.cloud.aws.credentials.secret-key", localStackContainer::getSecretKey);
-    registry.add("spring.cloud.aws.sqs.endpoint",
-      () -> localStackContainer.getEndpointOverride(SQS).toString());
-    registry.add("spring.cloud.aws.sqs.enabled", () -> true);
-
-    return localStackContainer;
+  /**
+   * Create a property registrar for configuring localstack properties.
+   *
+   * @param container The container associated with the properties.
+   * @return The created registrar.
+   */
+  @Bean
+  DynamicPropertyRegistrar localstackProperties(LocalStackContainer container) {
+    return registry -> {
+      registry.add("spring.cloud.aws.region.static", container::getRegion);
+      registry.add("spring.cloud.aws.credentials.access-key", container::getAccessKey);
+      registry.add("spring.cloud.aws.credentials.secret-key", container::getSecretKey);
+      registry.add("spring.cloud.aws.sqs.endpoint",
+        () -> container.getEndpointOverride(SQS).toString());
+      registry.add("spring.cloud.aws.sqs.enabled", () -> true);
+    };
   }
 
   /**
