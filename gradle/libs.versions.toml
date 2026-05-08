@@ -22,7 +22,7 @@ sentry-core = { module = "io.sentry:sentry-spring-boot-starter-jakarta", version
 sentry-logback = { module = "io.sentry:sentry-logback", version.ref = "sentry"}
 shedlock-spring = { module = "net.javacrumbs.shedlock:shedlock-spring", version.ref = "shedlock"}
 shedlock-provider-mongo = { module = "net.javacrumbs.shedlock:shedlock-provider-mongo", version.ref = "shedlock"}
-spring-cloud-dependencies-core = { module = "org.springframework.cloud:spring-cloud-dependencies", version = "2025.0.1"}
+spring-cloud-dependencies-core = { module = "org.springframework.cloud:spring-cloud-dependencies", version = "2025.0.2"}
 spring-cloud-dependencies-aws = { module = "io.awspring.cloud:spring-cloud-aws-dependencies", version = "3.4.2"}
 spring-cloud-dependencies-azure = { module = "com.azure.spring:spring-cloud-azure-dependencies", version = "6.1.0"}
 
@@ -35,5 +35,5 @@ shedlock-mongo = ["shedlock-spring", "shedlock-provider-mongo"]
 
 [plugins]
 sonarqube = { id = "org.sonarqube", version = "7.2.2.6593"}
-spring-boot = { id = "org.springframework.boot", version = "3.5.10"}
+spring-boot = { id = "org.springframework.boot", version = "3.5.14"}
 spring-dependency-management = { id = "io.spring.dependency-management", version = "1.1.7"}
