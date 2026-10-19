@@ -3,7 +3,7 @@ mapstruct = "1.6.3"
 mongock = "5.5.1"
 openhtmltopdf = "1.1.37"
 sentry = "8.32.0"
-shedlock = "6.9.2"
+shedlock = "7.10.1"
 xray = "2.20.0"
 
 [libraries]
