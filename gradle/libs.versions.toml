@@ -1,7 +1,7 @@
 [versions]
 mapstruct = "1.6.3"
 mongock = "5.5.1"
-openhtmltopdf = "1.1.37"
+openhtmltopdf = "1.1.100"
 sentry = "8.32.0"
 shedlock = "6.9.2"
 xray = "2.20.0"
