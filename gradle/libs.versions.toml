@@ -35,5 +35,5 @@ shedlock-mongo = ["shedlock-spring", "shedlock-provider-mongo"]
 
 [plugins]
 sonarqube = { id = "org.sonarqube", version = "7.5.0.8588"}
-spring-boot = { id = "org.springframework.boot", version = "3.5.16"}
+spring-boot = { id = "org.springframework.boot", version = "4.1.2"}
 spring-dependency-management = { id = "io.spring.dependency-management", version = "1.1.7"}
